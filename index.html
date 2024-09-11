@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Em busca da casa automática</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+<main>
+    <div class="passo ativo" id="passo-0">
+        <p>Você recebeu um convite enigmático para visitar o Castelo Eldridge, uma antiga fortaleza no topo da colina. O convite menciona que um grande mistério aguarda para ser desvendado. Chegando ao castelo, você encontra a grande porta de entrada entreaberta.</p>
+        <button class="btn-proximo" data-proximo="1">Entrar pela porta principal</button>
+        <button class="btn-proximo" data-proximo="2">Seguir pela escadaria em espiral</button>
+    </div>
+
+    <div class="passo" id="passo-1">
+        <p>Hall de Entrada: O hall é grande e escuro, com tapeçarias antigas e uma escadaria em espiral. Há duas portas, uma à esquerda e uma à direita.</p>
+        <button class="btn-proximo" data-proximo="3">Ir pela porta à esquerda</button>
+        <button class="btn-proximo" data-proximo="4">Ir pela porta à direita</button>
+    </div>
+
+    <div class="passo" id="passo-2">
+        <p>Escadaria em Espiral: A escadaria em espiral leva a um corredor estreito no andar superior. O corredor é escuro, e há dois caminhos à frente: uma porta no final do corredor e uma entrada para um quarto ao lado.</p>
+        <button class="btn-proximo" data-proximo="5">Abrir a porta no final do corredor</button>
+        <button class="btn-proximo" data-proximo="6">Entrar no quarto ao lado</button>
+    </div>
+
+    <div class="passo" id="passo-3">
+        <p>Sala de Estar: A sala está empoeirada e cheia de móveis cobertos por lençóis. No centro da sala, há um antigo baú.</p>
+        <button class="btn-proximo" data-proximo="7">Abrir o baú</button>
+        <button class="btn-proximo" data-proximo="8">Ignorar o baú e explorar mais</button>
+    </div>
+
+    <div class="passo" id="passo-4">
+        <p>Biblioteca: A biblioteca é vasta, com prateleiras repletas de livros antigos e um globo terrestre no centro da sala. Há uma estante de livros que parece um pouco deslocada.</p>
+        <button class="btn-proximo" data-proximo="9">Puxar o livro deslocado</button>
+        <button class="btn-proximo" data-proximo="10">Examinar o globo terrestre</button>
+    </div>
+
+    <div class="passo" id="passo-5">
+        <p>A porta no final do corredor leva a uma pequena sala com uma mesa e um candelabro. Em cima da mesa, há um livro aberto e uma chave antiga.</p>
+        <button class="btn-proximo" data-proximo="11">Examinar o livro</button>
+        <button class="btn-proximo" data-proximo="12">Pegar a chave</button>
+    </div>
+
+    <div class="passo" id="passo-6">
+        <p>O quarto ao lado está cheio de caixas antigas e um baú no canto. Há uma foto antiga de um homem com um uniforme militar em uma mesa.</p>
+        <button class="btn-proximo" data-proximo="13">Examinar o baú</button>
+        <button class="btn-proximo" data-proximo="14">Examinar a foto</button>
+    </div>
+
+    <div class="passo" id="passo-7">
+        <p>O baú contém um diário antigo e um mapa do castelo com uma área destacada no porão. O diário fala sobre um segredo escondido.</p>
+        <button class="btn-proximo" data-proximo="15">Seguir o mapa até o porão</button>
+        <button class="btn-proximo" data-proximo="16">Voltar para o hall de entrada</button>
+    </div>
+
+    <div class="passo" id="passo-8">
+        <p>Você encontra um retrato antigo em que um dos olhos parece seguir você. O retrato esconde uma chave atrás dele. A chave abre uma sala trancada onde há pistas sobre um evento sombrio que ocorreu na mansão.</p>
+        <button class="btn-proximo" data-proximo="17">Explorar a sala trancada</button>
+        <button class="btn-proximo" data-proximo="18">Voltar para o hall de entrada</button>
+    </div>
+
+    <div class="passo" id="passo-9">
+        <p>Ao puxar o livro deslocado, uma estante de livros se move, revelando uma sala oculta com uma caixa de música antiga. A caixa toca uma melodia e revela um mapa da mansão com um esconderijo secreto.</p>
+        <button class="btn-proximo" data-proximo="19">Seguir o mapa até o esconderijo secreto</button>
+        <button class="btn-proximo" data-proximo="20">Voltar para a biblioteca</button>
+    </div>
+
+    <div class="passo" id="passo-10">
+        <p>O globo terrestre tem um mecanismo oculto. Girá-lo revela uma abertura na parede, contendo um conjunto de chaves e uma nota sobre um evento trágico na história da família Eldridge.</p>
+        <button class="btn-proximo" data-proximo="21">Usar as chaves para explorar a nota</button>
+        <button class="btn-proximo" data-proximo="22">Voltar para a biblioteca</button>
+    </div>
+
+    <div class="passo" id="passo-11">
+        <p>O livro contém anotações criptografadas e um marcador de página que revela um compartimento escondido na parede. Dentro, há um mapa do castelo com uma área destacada no porão.</p>
+        <button class="btn-proximo" data-proximo="15">Seguir o mapa até o porão</button>
+    </div>
+
+    <div class="passo" id="passo-12">
+        <p>A chave abre um cofre no final do corredor. Dentro do cofre, você encontra uma carta antiga que revela um segredo sobre um item valioso escondido no castelo.</p>
+        <button class="btn-proximo" data-proximo="23">Investigar o item valioso</button>
+        <button class="btn-proximo" data-proximo="24">Voltar para o corredor</button>
+    </div>
+
+    <div class="passo" id="passo-13">
+        <p>O baú contém uma série de documentos antigos e um diário de um antigo guardião do castelo, que descreve um evento misterioso envolvendo um tesouro escondido no subterrâneo.</p>
+        <button class="btn-proximo" data-proximo="25">Seguir para o subterrâneo</button>
+        <button class="btn-proximo" data-proximo="26">Voltar para o quarto</button>
+    </div>
+
+    <div class="passo" id="passo-14">
+        <p>A foto revela uma mensagem secreta escrita nas costas, indicando a localização de uma passagem escondida no porão.</p>
+        <button class="btn-proximo" data-proximo="27">Seguir para o porão</button>
+        <button class="btn-proximo" data-proximo="28">Voltar para o quarto</button>
+    </div>
+
+    <div class="passo" id="passo-15">
+        <p>Você segue o mapa até o porão e encontra uma sala secreta com um baú antigo. O baú contém um tesouro escondido e uma carta explicando a história do castelo.</p>
+        <button class="btn-proximo" data-proximo="29">Ler a carta e descobrir a história</button>
+    </div>
+
+    <div class="passo" id="passo-16">
+        <p>Você volta para o hall de entrada e decide explorar outros caminhos. No entanto, a investigação anterior sobre o mapa leva você a retornar ao porão para descobrir mais.</p>
+        <button class="btn-proximo" data-proximo="15">Seguir para o porão</button>
+    </div>
+
+    <div class="passo" id="passo-17">
+        <p>A sala trancada contém uma série de documentos antigos e uma carta revelando uma conspiração familiar. A descoberta leva você a uma sala secreta no subterrâneo.</p>
+        <button class="btn-proximo" data-proximo="31">Explorar a sala secreta</button>
+    </div>
+
+    <div class="passo" id="passo-18">
+        <p>Você volta para o hall de entrada e decide encerrar sua exploração. A aventura chega ao fim.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-19">
+        <p>O esconderijo secreto revela um antigo artefato e um diário descrevendo o segredo da família. Isso leva você a uma conclusão surpreendente sobre o castelo.</p>
+        <button class="btn-proximo" data-proximo="30">Finalizar a exploração</button>
+    </div>
+
+    <div class="passo" id="passo-20">
+        <p>Você volta para a biblioteca e decide explorar mais. A descoberta de novos documentos leva a uma nova pista sobre o porão.</p>
+        <button class="btn-proximo" data-proximo="15">Seguir para o porão</button>
+    </div>
+
+    <div class="passo" id="passo-21">
+        <p>Usando as chaves, você explora a nota e descobre uma passagem secreta que leva ao subterrâneo.</p>
+        <button class="btn-proximo" data-proximo="25">Explorar o subterrâneo</button>
+    </div>
+
+    <div class="passo" id="passo-22">
+        <p>Você volta para a biblioteca e decide explorar a estante de livros. Descobre uma pista adicional sobre um compartimento secreto.</p>
+        <button class="btn-proximo" data-proximo="35">Seguir para o compartimento secreto</button>
+    </div>
+
+    <div class="passo" id="passo-23">
+        <p>Investigando o item valioso, você encontra um mapa antigo que leva a um local oculto na mansão, revelando uma parte importante da história do castelo.</p>
+        <button class="btn-proximo" data-proximo="36">Explorar o local oculto</button>
+    </div>
+
+    <div class="passo" id="passo-24">
+        <p>Você volta para o corredor e decide explorar outros caminhos. A investigação leva você a descobrir mais pistas sobre o porão.</p>
+        <button class="btn-proximo" data-proximo="15">Seguir para o porão</button>
+    </div>
+
+    <div class="passo" id="passo-25">
+        <p>O subterrâneo contém um antigo laboratório e mais pistas sobre o tesouro escondido. As pistas levam você a uma revelação importante sobre o castelo.</p>
+        <button class="btn-proximo" data-proximo="37">Descobrir a revelação</button>
+    </div>
+
+    <div class="passo" id="passo-26">
+        <p>Você volta para o quarto e decide explorar mais a fundo. A exploração leva a novas descobertas e pistas sobre o castelo.</p>
+        <button class="btn-proximo" data-proximo="38">Explorar mais</button>
+    </div>
+
+    <div class="passo" id="passo-27">
+        <p>A passagem escondida no porão leva a um antigo salão com um tesouro escondido e documentos importantes sobre a família Eldridge.</p>
+        <button class="btn-proximo" data-proximo="39">Examinar o tesouro e documentos</button>
+    </div>
+
+    <div class="passo" id="passo-28">
+        <p>Você volta para o quarto e explora mais. Encontra uma pista que leva a um esconderijo secreto.</p>
+        <button class="btn-proximo" data-proximo="40">Seguir para o esconderijo secreto</button>
+    </div>
+
+    <div class="passo" id="passo-29">
+        <p>A carta revela a história da família Eldridge e o motivo pelo qual o castelo foi construído. A revelação traz um fechamento para a sua aventura.</p>
+        <button class="btn-proximo" data-proximo="41">Finalizar a exploração</button>
+    </div>
+
+    <div class="passo" id="passo-30">
+        <p>Você explora mais o porão e encontra mais pistas e segredos sobre o castelo. Isso leva você a uma conclusão sobre a história do lugar.</p>
+        <button class="btn-proximo" data-proximo="42">Finalizar a exploração</button>
+    </div>
+
+    <div class="passo" id="passo-31">
+        <p>A sala secreta revela mais sobre a conspiração familiar e o verdadeiro motivo dos eventos misteriosos no castelo. Isso encerra a sua aventura.</p>
+        <button class="btn-proximo" data-proximo="43">Finalizar a exploração</button>
+    </div>
+
+    <div class="passo" id="passo-32">
+        <p>Você volta para o hall de entrada e decide encerrar sua exploração. A aventura chega ao fim.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-33">
+        <p>A revelação do segredo da família leva você a uma conclusão importante sobre o castelo, encerrando a sua aventura.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-34">
+        <p>Explorando o subterrâneo, você encontra mais informações sobre o mistério do castelo, levando a uma conclusão sobre a história do lugar.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-35">
+        <p>O compartimento secreto revela um importante artefato e uma pista final sobre o mistério do castelo, concluindo a sua aventura.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-36">
+        <p>Explorando o local oculto, você descobre informações cruciais sobre o castelo, encerrando a sua exploração.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-37">
+        <p>A revelação do tesouro escondido e dos documentos leva você a um fechamento satisfatório sobre a história do castelo.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-38">
+        <p>Após explorar mais, você encontra a última pista sobre o castelo, levando ao encerramento da sua jornada.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-39">
+        <p>Examinando o tesouro e os documentos, você revela todos os segredos do castelo e encerra a sua aventura.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-40">
+        <p>Explorando o esconderijo secreto, você descobre a verdade sobre o castelo, encerrando a exploração.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-41">
+        <p>Finalizando a leitura da carta e explorando os segredos revelados, você chega ao fim da sua aventura.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-42">
+        <p>Após explorar o porão, você reúne todas as informações necessárias e encerra sua jornada com uma conclusão sobre o castelo.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-43">
+        <p>A conclusão sobre a conspiração familiar e os eventos do castelo leva ao encerramento da sua exploração.</p>
+        <button class="btn-proximo" data-proximo="44">Finalizar</button>
+    </div>
+
+    <div class="passo" id="passo-44">
+        <p>Você encerra sua exploração do Castelo Eldridge com a satisfação de ter desvendado todos os mistérios.</p>
+  <img src="cenario-passo0.avif"
+   
+</div>
+
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
